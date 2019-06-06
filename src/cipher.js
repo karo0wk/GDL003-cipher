@@ -1,5 +1,11 @@
 window.cipher = {
   encode: function(string, offset){
-    return "textoCifrado"}
-  // propiedad: valor...
-};
+    for (int i=0; i<=40; i;++)
+    {} 
+
+    return "textoCifrado"
+  },
+
+  decode: function(string, offset){
+    return "textoDecifrado"
+  }};
