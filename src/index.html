@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <div>
+    <div id="pagina1">
       <p class="fondo">
     <center>
     <meta charset="utf-8">
@@ -19,7 +19,7 @@ El <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Código Cesar</a>
   batalla.</p2>
 
 
- <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png" height="423px" width="1000px" >
+
 
 <br>
 <p3>
@@ -39,22 +39,27 @@ El <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Código Cesar</a>
 <br>
 <p4>Para instalar el programa sólo has click en el botón descargar, posteriormente dar ejecutar programa</p4>
 <br>
-    <input type="button" name"boton_descarga" value="Descargar" id="boton1">
+<button type="button" onclick="descargita()"name="button_desc">Descargar</button>
+    <!-- <input type="button" name"boton_descarga" value="Descargar" id="boton1"> -->
 <br>
 
 
-<div>
+</div>
+<div id="pagina1">
     <h2>LETRAS SECRETAS</h2>
     <p>Ingresa el texto que quieres cifrar y el desplasamiento (offset) es el número de posiciones que queremos mover a la derecha en el alfabeto</p>
-    <textarea name="comentarios" rows="10" cols="40">Escribe aquí el texto a cifrar</textarea>
+    <textarea name="comentarios" rows="10" cols="40" id="letritas">Escribe aquí el texto a cifrar</textarea>
 <br>
 <br>
     <input type="submit" value="Número de desplazamiento">
     <input type="text" name="offset">
     <br>
     <br>
-    <input type="button" name="boton_cifrar" value="Cifrar" id="boton2">
-    <input type="button" name="boton_descifrar" value="Desifrar" id="boton3">
+    <button type="button" onclick="cifradito()" name="button_cifrar">Cifrar</button>
+    <!-- <input type="button" name="boton_cifrar" value="Cifrar" id="boton2" onclick="cifradito()"> -->
+    <button type="button" onclick="decifradito()" name="button_decifrar">Desifrar</button>
+    <!-- <input type="button" name="boton_descifrar" value="Desifrar" id="boton3"> -->
+  </div>
     <br><br>
 
     <div id="root">
