@@ -1,29 +1,15 @@
 window.cipher = {
  encode: function(string, offset) {
-      let x = letritas.value;
+      let x = cifradito.value;
       var result = "";
-
           for (let i = 0; i < x.length; i++) {
               let c = x[i].charCodeAt(0);
 
                   if(c >= 97 && c <= 122){
                     let form = (c - 97 + parseInt(offset.value)) % 26 + 97;
-                    let codificado = String.fromCharCode(form);
-                    result += codificado;
-                  }
-
-              /* }else {
-                  result += text.charAt(i);
+                    let letritas = String.fromCharCode(form);
+                    result += letritas;
+                  }}
+                  return result;
+                }
               }
-          }
-      }
-      return result;
-  },
-
-/*
-      decode: function decrypt(string, offset){
-          var result = "";
-          shift = (26 - shift) % 26;
-          result = encrypt(text,shift);
-  }};
-*/
