@@ -10,61 +10,54 @@
   </head>
   <h1> LETRAS SECRETAS</h1>
   <body>
-    <p>Este programa está diseñado para encriptar y desencriptar código, se puede copiar información encriptada y y copiada en cualquier documento de forma en que no pueda ser leída fácil mete por otras personas, este código secreto seoptiene mediante el # Cifrado César.</p>
-<br>
-El <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Código Cesar</a>
-   <p2>
+  <p>Este programa está diseñado para encriptar y desencriptar código, se puede copiar información encriptada y y copiada en cualquier documento de forma en que no pueda ser leída fácil mete por otras personas, este código secreto seoptiene mediante el # Cifrado César.</p>
+  <br>
+  El <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Código Cesar</a>
+  <p2>
   es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
   César lo usaba para enviar órdenes secretas a sus generales en los campos de
   batalla.</p2>
-
-
-
-
-<br>
-<p3>
+  <br>
+  <p3>
   El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
   un tipo de cifrado por sustitución, es decir que cada letra del texto original
   es reemplazada por otra que se encuentra un número fijo de posiciones
   (desplazamiento) más adelante en el mismo alfabeto.</p3>
-<br>
+  <br>
   <p>Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:</p>
-<br>
+  <br>
   * La letra A se cifra como D.
   <br>
   * La palabra CASA se cifra como FDVD.
-
-
-<br>
-<br>
-<p4>Para instalar el programa sólo has click en el botón descargar, posteriormente dar ejecutar programa</p4>
-<br>
-<button type="button" onclick="descargita()"name="button_desc">Descargar</button>
-    <!-- <input type="button" name"boton_descarga" value="Descargar" id="boton1"> -->
-<br>
-
-
+  <br>
+  <br>
+  <p4>Para instalar el programa sólo has click en el botón descargar, posteriormente dar ejecutar programa</p4>
+  <br>
+  <button type="button" onclick="descargita()"name="button_desc">Descargar</button>
 </div>
+
+
+
+
 <div id="pagina1">
+    <center>
     <h2>LETRAS SECRETAS</h2>
     <p>Ingresa el texto que quieres cifrar y el desplasamiento (offset) es el número de posiciones que queremos mover a la derecha en el alfabeto</p>
-    <textarea name="comentarios" rows="10" cols="40" id="letritas">Escribe aquí el texto a cifrar</textarea>
-<br>
-<br>
     <input type="submit" value="Número de desplazamiento">
-    <input type="text" name="offset">
-    <br>
+    <input type="text" name="offset" id="desplazamiento">
+    <textarea name="comentarios1"  rows="10" cols="40" id="letritas">Escribe aquí el texto a cifrar</textarea>
     <br>
     <button type="button" onclick="cifradito()" name="button_cifrar" value="Cifrar" id="boton2">Cifrar</button>
-    <!-- <input type="button" name="boton_cifrar" value="Cifrar" id="boton2" onclick="cifradito()"> -->
+    <br>
+    <textarea name="comentarios2"  rows="10" cols="40" id="letrotas">Escribe aquí el texto a descifrar</textarea>
+    <br>
     <button type="button" onclick="decifradito()" name="button_decifrar">Desifrar</button>
-    <!-- <input type="button" name="boton_descifrar" value="Desifrar" id="boton3"> -->
+
   </div>
     <br><br>
-
     <div id="root">
-
     </div>
+
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
