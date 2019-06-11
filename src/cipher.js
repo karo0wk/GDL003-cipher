@@ -1,30 +1,44 @@
 window.cipher = {
- encode: function() {
-      let x = letritas.value;
-      let result = "";
-          for (let i = 0; i < x.length; i++) {
-              let c = x[i].charCodeAt(0);
+  encode:(val_offset, val_texto) => {
+    let resultado ="";
+    let mayusculas = val_texto.toUpperCase();
 
-                  if(c >= 97 && c <= 122){
-                    let form = (c - 97 + parseInt(desplazamiento.value)) % 26 + 97;
-                    let letritas = String.fromCharCode(form);
-                    result += letritas;
-                  }}
-                  return result;
-                },
+    for (let i=0;i<mayusculas.length;i++){
+      let textoconvertido = mayusculas.charCodeAt(i);
+      if (textoconvertido===32)
+      {
+        let cambioDePosicion= String.fromCharCode(textoconvertido);
+        resultado += cambioDePosicion;
+      }
+      else {
+        let textoconvertido= mayusculas.charCodeAt(i);
+        let offsetDos= parseInt(val_offset);
+        let formula= (textoconvertido-65+offsetDos)%26+65;
+        let cambioDePosicion= String.fromCharCode(formula);
+        resultado += cambioDePosicion;
+      }
+    }
+    return(resultado);
+  },
+  decode:(val_offset, val_texto) => {
+    let resultado ="";
+    let mayusculas = val_texto.toUpperCase();
 
-
-              decode: function() {
-                   let x = letrotas.value;
-                   let result = "";
-                       for (let i = 0; i < x.length; i++) {
-                           let c = x[i].charCodeAt(0);
-
-                               if(c >= 97 && c <= 122){
-                                 let form = (c - 97 - parseInt(desplazamiento.value)+14) % 26 + 97;
-                                 let letrotas = String.fromCharCode(form);
-                                 result += letrotas;
-                               }}
-                               return result;
-                             }
-                           };
+    for (let i=0;i<mayusculas.length;i++){
+      let textoconvertido = mayusculas.charCodeAt(i);
+      if (textoconvertido===32)
+      {
+        let cambioDePosicion= String.fromCharCode(textoconvertido);
+        resultado += cambioDePosicion;
+      }
+      else {
+        let textoconvertido= mayusculas.charCodeAt(i);
+        let offsetDos= parseInt(val_offset);
+        let formula= (textoconvertido+65-offsetDos)%26+65;
+        let cambioDePosicion= String.fromCharCode(formula);
+        resultado += cambioDePosicion;
+      }
+    }
+    return(resultado);
+  }
+};
