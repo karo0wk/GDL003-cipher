@@ -1,9 +1,7 @@
-# Cifrado César
+# Cifrado Secreto
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
+El [Cifrado Secreto](file:///home/laboratoria-184/Documentos/Laboratoria/GDL003-cipher/src/index.html)
+es una webapp diseñada para cifrar y descifrar texto por medio de el Cifrado Cesar
 
 ![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
 
@@ -25,49 +23,12 @@ comunicación por sí mismos; el cifrado César sí puede formar parte de sistem
 más complejos de codificación, como el cifrado Vigenère, e incluso tiene
 aplicación en el sistema ROT13.
 
-## Resumen del proyecto
+## Utilidades de la webapp Codigo Secreto
 
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación
-web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un
-texto indicando un desplazamiento específico de caracteres (_offset_).
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+* Utilizar cualquier tipo de
 
-## Consideraciones generales
-
-* Este proyecto se debe resolver de manera individual.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
-* Tiempo para completarlo: Toma como referencia 2 semanas. Trabaja durante el
-  primer Sprint (una semana) y al final, trata de fijar un estimado de cuándo lo
-  terminarás.
-
-## Objetivos de aprendizaje
-
-En este proyecto aprenderás a construir una aplicación web que interactúe con el
-usuario a través del navegador y la lógica basada en esa interacción. Dicho en
-palabras sencillas, aprenderás a:
-
-* Pintar elementos de formulario en la pantalla usando **HTML** y **CSS**.
-* Permitir al usuario interactuar con elementos del DOM y hacer que la
-  aplicación responda (cifrar/descifrar) cuando ocurran esos **eventos del DOM**.
-* Manipular _**strings**_ (cadenas de texto).
-* Usar **control de flujo** (bucles, condicionales, ...).
-* Actualizar la pantalla con los resultados (**manipular el DOM**).
-* **Implementar funciones** dada una descripción de su comportamiento.
-* Verificar tu implementación con **pruebas unitarias**.
-* Entender las **necesidades del usuario** y cómo proponer una solución.
-* Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
 
 ## Avance esperado
 
@@ -184,7 +145,7 @@ usaremos las recomendaciones _por defecto_ de tanto `eslint` como `htmlhint`.
 ## Rúbrica
 
 Te aconsejamos revisar [la rúbrica](https://docs.google.com/spreadsheets/u/1/d/e/2PACX-1vRktPN4ilZtkRN5tUb3DVhgeihwlzk63_-JI3moA-bXpKDbHDioAK2H3qbrwWNb0Ql4wX22Tgv7-PDv/pubhtml)
-para ver la descripción detallada de cada _habilidad_ y cada _nivel_. 
+para ver la descripción detallada de cada _habilidad_ y cada _nivel_.
 
 ## Pistas sobre cómo comenzar a trabajar en el proyecto
 
