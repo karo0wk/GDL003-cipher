@@ -1,6 +1,21 @@
 
+
+p1 {
+color: blue;
+font-family: "sans-serif";
+font-size:80px;
+font-weight:500px;
+background-color: #21F6D6;
+border: black 20px;
+margin: 20px;
+padding: 600px 250px;
+border: 1px solid black;
+
+
+}
+
 body {
-  background: url("http://68.media.tumblr.com/270e071bbb7cf91fda03d60047788367/tumblr_o9u5grtDSY1uzwgsuo1_400.gif") repeat-x;
+  background: url("https://media2.giphy.com/media/jbKsZBIzlyA0g/giphy.gif") repeat-x;
   width: 100%;
   height: 100%;
   text-align: center;
